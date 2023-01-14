@@ -21,19 +21,19 @@ app.get('/anotherTest', function (req, res) {
   res.send("2000!");
 });
 
-// app.post('/receive', function (request, respond) {
-//   var body = '';
-//   filePath = path3 + '/data.txt';
-//   request.on('data', function (data) {
-//     body += data;
-//   });
-//
-//   request.on('end', function () {
-//     fs.appendFile(filePath, body, function () {
-//       respond.send(body).end();
-//     });
-//   });
-// });
+app.post('/receive', function (request, respond) {
+  var body = '';
+  filePath = path3 + '/data.txt';
+  request.on('data', function (data) {
+    body += data;
+  });
+
+  request.on('end', function () {
+    fs.appendFile(filePath, body, function () {
+      respond.send(body).end();
+    });
+  });
+});
 
 // app.delete('/delete', function (request, respond) {
 //   filePath = path3 + '/data.txt';
