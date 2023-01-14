@@ -13,13 +13,13 @@ app.use('/backoffice', express.static(path2));
 
 app.use(cors({ origin: '*' }));
 
-// app.get('/test', function (req, res) {
-//   res.send("1000!");
-// });
-//
-// app.get('/anotherTest', function (req, res) {
-//   res.send("2000!");
-// });
+app.get('/test', function (req, res) {
+  res.send("1000!");
+});
+
+app.get('/anotherTest', function (req, res) {
+  res.send("2000!");
+});
 
 // app.post('/receive', function (request, respond) {
 //   var body = '';
