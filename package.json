@@ -1,0 +1,12 @@
+{
+  "name": "my_web_server",
+  "version": "1.0.0",
+  "description": "A Basic Node App to serve something.",
+  "main": "app.js",
+  "author": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.1.1"
+  }
+}
