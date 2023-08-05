@@ -1,5 +1,5 @@
 {
-  "name": "my_web_server",
+  "name": "basic_node_app",
   "version": "1.0.0",
   "description": "A Basic Node App to serve something.",
   "main": "app.js",
