@@ -2,14 +2,17 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 
-const path = 'public';
+const path = 'home';
 const path2 = 'backoffice';
 const path3 = 'docs';
+const path4 = 'finances';
 
 const app = express();
 
 app.use('/', express.static(path));
 app.use('/backoffice', express.static(path2));
+app.use('/docs', express.static(path3));
+app.use('/finances', express.static(path4));
 
 app.use(cors({ origin: '*' }));
 
@@ -48,7 +51,7 @@ app.delete('/delete', function (request, respond) {
 })
 
 // set port, listen for requests
-const PORT = 80;
+const PORT = 7001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
